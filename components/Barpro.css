@@ -1,0 +1,31 @@
+.button {
+    background-color: #f5f2f0;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0px 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 84px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 38px;
+    position: relative;
+    top: -8px;
+  }
+  button:hover {
+    background-color: #e2ded9;
+  }
+  .profile {
+      border-radius: 100%;
+      width: 30px;
+      height: 30px;
+      margin-left: 12px;
+    }
+  .profileco{
+      display: flex;
+  }
+  
+  
