@@ -1,8 +1,11 @@
 import React from 'react'
+import Header2 from "./components2/Header2"
 
 const AccesoPage = () => {
   return (
-    <div>Resumen </div>
+    <div>
+      <Header2 />
+    </div>
   )
 }
 
