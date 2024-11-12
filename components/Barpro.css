@@ -11,7 +11,7 @@
     height: 40px;
     justify-content: center;
     align-items: center;
-    margin-left: 38px;
+    margin-left: 32px;
     position: relative;
     top: -8px;
   }
@@ -20,6 +20,7 @@
   }
   .profile {
       border-radius: 100%;
+      background-color: #f5f0f0;
       width: 30px;
       height: 30px;
       margin-left: 12px;
