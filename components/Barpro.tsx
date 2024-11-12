@@ -9,6 +9,7 @@ const Barpro = () => {
       <Link href={"/acceso"} passHref>
         <button className="button">Acceso</button>
       </Link>
+      <div>
       <Image
         className="profile"
         src="/usuario.png"
@@ -16,6 +17,7 @@ const Barpro = () => {
         height={100}
         alt={"Icono del perfil"}
       />
+      </div>
     </div>
   )
 }
