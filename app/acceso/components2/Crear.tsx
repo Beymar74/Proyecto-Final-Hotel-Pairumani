@@ -1,6 +1,7 @@
 import React from "react";
 import "./Crear.css";
 import Link from "next/link";
+import Image from "next/image";
 
 const Crear = () => {
   return (
@@ -11,14 +12,30 @@ const Crear = () => {
         </Link>
       </div>
       <div className="ingresar">
-        <div className="cajita">
-          <Link href={"/acceso"} passHref>
-            <button className="google">Continuar con Google</button>
-          </Link>
-          <Link href={"/acceso"} passHref>
-            <button className="facebook">Continuar con Facebook</button>
-          </Link>
-        </div>
+        <Link href={"/acceso"} passHref>
+          <button className="botoncini">
+            <Image
+              className="logini"
+              src="/image 25.png"
+              width={500}
+              height={500}
+              alt={"Logo Hotel Pairumani"}
+            />
+            <h2 className="textini">Continuar con Google</h2>
+          </button>
+        </Link>
+        <Link href={"/acceso"} passHref>
+          <button className="botoncini">
+            <Image
+              className="logini"
+              src="/image 24.png"
+              width={500}
+              height={500}
+              alt={"Logo Hotel Pairumani"}
+            />
+            <h2 className="textini">Continuar con Facebook</h2>
+          </button>
+        </Link>
       </div>
     </div>
   );

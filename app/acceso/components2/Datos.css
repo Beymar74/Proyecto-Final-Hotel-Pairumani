@@ -120,6 +120,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 21px; /* 150% */
+  margin: 0;
 }
 .linksini {
   width: 375px;
