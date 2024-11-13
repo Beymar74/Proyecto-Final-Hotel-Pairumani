@@ -14,7 +14,7 @@ const Header = () => {
           height={500}
           alt={'Logo Hotel Pairumani'}
         />
-        <h1 className="titulo">Hotel Pairumani</h1>
+        <h1>Hotel Pairumani</h1>
       <Barpro/>
       </div>
       <Image
