@@ -1,0 +1,8 @@
+.food-list {
+    padding: 16px 24px; /* Ajusta el padding horizontal */
+    max-width: 500px; /* Ajusta el ancho máximo si es necesario */
+    margin: auto; /* Centra la lista en la página */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
