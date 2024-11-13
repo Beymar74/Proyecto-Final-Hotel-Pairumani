@@ -1,0 +1,89 @@
+.cuenta {
+  display: flex;
+  padding: 12px 113.5px 24px 112.5px;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+}
+.ingresar {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.crear {
+  display: flex;
+  width: 149px;
+  height: 41px;
+  padding: 10px 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: #f5f2f0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  align-self: stretch;
+  overflow: hidden;
+  color: #171412;
+  text-align: center;
+  font-feature-settings: "dlig" on;
+  text-overflow: ellipsis;
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px; /* 150% */
+}
+.google {
+  width: 329px;
+  height: 41px;
+  left: 22.5px;
+  border-radius: 20px;
+  background: #f5f2f0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  align-self: stretch;
+  overflow: hidden;
+  color: #171412;
+  text-align: center;
+  font-feature-settings: "dlig" on;
+  text-overflow: ellipsis;
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+}
+.facebook {
+  width: 329px;
+  height: 41px;
+  left: 22.5px;
+  border-radius: 20px;
+  background: #f5f2f0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  align-self: stretch;
+  overflow: hidden;
+  color: #171412;
+  text-align: center;
+  font-feature-settings: "dlig" on;
+  text-overflow: ellipsis;
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+}
+.cajita {
+  display: flex;
+  height: 107px;
+  max-width: 480px;
+  padding: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1 0 0;
+}
