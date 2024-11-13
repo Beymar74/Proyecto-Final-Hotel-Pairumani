@@ -5,6 +5,7 @@ const Create = () => {
   return (
     <div className="form">
       <form className="registro">
+      <h2 className="titulo1">Crear una cuenta</h2>
         <h1 className="info">Nombre Completo</h1>
         <input type="text"  placeholder="Nombre Completo" />
 

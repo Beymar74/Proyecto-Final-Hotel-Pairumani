@@ -7,7 +7,7 @@ const Crear = () => {
   return (
     <div>
       <div className="cuenta">
-        <Link href={"/acceso"} passHref>
+        <Link href={"/crear"} passHref>
           <button className="crear">Crear una cuenta</button>
         </Link>
       </div>
