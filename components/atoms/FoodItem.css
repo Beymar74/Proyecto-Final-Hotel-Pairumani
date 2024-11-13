@@ -1,0 +1,10 @@
+.food-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.food-info {
+    display: flex;
+    flex-direction: column;
+}
