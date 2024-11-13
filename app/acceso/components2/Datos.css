@@ -14,6 +14,7 @@
   justify-content: center;
   align-items: center;
   align-self: stretch;
+  margin-bottom: 18px;
 }
 .subcaja {
   display: flex;
@@ -23,24 +24,8 @@
   align-items: center;
   flex: 1 0 0;
 }
-.email {
-  display: flex;
-  width: 375px;
-  height: 124px;
-  max-width: 480px;
-  padding: 10px;
-  align-items: flex-start;
-  gap: 10px;
-}
-.contrasena {
-  display: flex;
-  width: 375px;
-  height: 124px;
-  max-width: 480px;
-  padding: 10px;
-  align-items: flex-start;
-  gap: 10px;
-}
+
+
 .iniciarSesion {
   display: flex;
   padding: 12px 112.5px 11px 112.5px;
@@ -55,16 +40,7 @@
   align-items: center;
   align-self: stretch;
 }
-.caja {
-  display: flex;
-  width: 375px;
-  min-width: 160px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  left: -0.5px;
-  top: 18px;
-}
+
 .texto {
   display: flex;
   width: 263px;
@@ -72,16 +48,7 @@
   flex-direction: column;
   align-items: flex-start;
 }
-.llenar {
-  display: flex;
-  width: 263px;
-  height: 56px;
-  padding: 15px;
-  align-items: center;
-  border-radius: 12px;
-  border: 1px solid #e5e0db;
-  background: #fff;
-}
+
 .tex {
   color: #171412;
   font-feature-settings: "dlig" on;
@@ -89,17 +56,10 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 24px; /* 150% */
+  margin-bottom: 8px;
 }
-.llen {
-  color: #877363;
-  font-feature-settings: "dlig" on;
-  font-family: "Plus Jakarta Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-}
+
 .button {
   display: flex;
   width: 149px;
@@ -132,4 +92,22 @@
   font-style: normal;
   font-weight: 400;
   line-height: 21px; /* 150% */
+}
+
+.form1 input {
+  height: 56px;
+  padding: 10px;
+  border: 1px solid #e5e0db;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  color: #877363;
+  font-feature-settings: "dlig" on;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  width: 263px;
+height: 56px;
+padding: 15px;
 }
