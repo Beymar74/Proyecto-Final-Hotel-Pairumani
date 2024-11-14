@@ -1,0 +1,51 @@
+.cabeza {
+  display: flex;
+  padding: 16px 16px 8px 16px;
+  align-items: center;
+  justify-content:space-between;
+
+}
+.orden{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+.izq {
+  padding: 10px;
+  margin-right:40px;
+  margin-left: 5px;
+
+}
+.der {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  margin-left:50px;
+  margin-right: 0px;
+}
+.atras{
+  width: 30px;
+  height: 30px;
+}
+.profile {
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.button {
+  background-color: #f5f2f0;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 84px;
+  height: 40px;
+  top: -8px;
+}
+button:hover {
+  background-color: #e2ded9;
+}
