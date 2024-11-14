@@ -7,7 +7,7 @@ import Lugar from '@/Notaespecial/Lugar';
 import Opccomedor from '@/Notaespecial/Opccomedor';
 import Contipedido from '@/Notaespecial/Contipedido';
 
-const Page = () => {
+const ConfirmarPage = () => {
   const [mostrarOpcComedor, setMostrarOpcComedor] = useState(false);
 
   const handleComedorClick = () => {
@@ -28,4 +28,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default ConfirmarPage;
