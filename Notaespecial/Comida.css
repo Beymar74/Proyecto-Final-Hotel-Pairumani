@@ -1,0 +1,110 @@
+.container {
+  display: flex;
+  padding: 16px 16px 8px 16px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.descripcion {
+  display: flex;
+  width: 361px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.nombre {
+  display: flex;
+  align-items: center;
+  width: 331px;
+  height: 48px;
+}
+.comidas {
+  width: 63.324px;
+  height: 42.424px;
+  flex-shrink: 0;
+  border-radius: 100%;
+}
+.num {
+  position: relative;
+  margin-left: 40px;
+  margin-right: 5px;
+  display: flex;
+  width: 48px;
+  padding: 14px 14px 12px 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  border: 1px solid #003e09;
+  background: #f5f2f0;
+}
+.texto {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  margin-left: 5px;
+  
+}
+.name {
+  color: #000;
+
+  /* Body / Normal - Medium */
+  font-family: Barlow;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 18.2px */
+}
+.mintexto {
+  color: #000;
+  /* Body / Small - Medium */
+  font-family: Barlow;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 16.8px */
+}
+.precio {
+  color: #000;
+  text-align:right;
+  /* Body/Large - Medium */
+  font-family: Barlow;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 130%; /* 22.4px */
+  
+}
+
+.comentario {
+    width: 300px;               /* Ocupa todo el ancho disponible */       
+    height: 50px;              /* Altura específica */
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--Base-Dark-Line, #393c49);
+    background: #f5f2f0;
+    resize: vertical;
+    font-size: 16px;
+    box-sizing: border-box;    /* Asegura que el padding no afecte el tamaño total */
+  }
+  .eliminar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px;              /* Ajusta el padding para que no se vea desproporcionado */
+    border-radius: 8px;
+    border: 1px solid #003e09;
+    background-color: #ffffff; /* Fondo blanco o el que prefieras */
+    cursor: pointer;
+  }
+.plato {
+  width: 20px;
+  height: 20px;
+}
+.notelim {
+    display: flex;             /* Alinea el textarea y el botón en una fila */
+    align-items: center;       /* Alinea los elementos verticalmente al centro */
+    gap: 10px;                 /* Espacio entre el textarea y el botón */
+  }
+  
