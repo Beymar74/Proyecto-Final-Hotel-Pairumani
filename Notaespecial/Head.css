@@ -11,16 +11,14 @@
   justify-content:space-between;
 }
 .izq {
-  padding: 10px;
-  margin-right:40px;
+  margin-right:70px;
   margin-left: 5px;
 
 }
 .der {
   display: flex;
   justify-content: flex-end;
-  padding: 10px;
-  margin-left:50px;
+  margin-left:90px;
   margin-right: 0px;
 }
 .atras{
