@@ -1,6 +1,7 @@
 .cont2 {
     display: flex;
-    margin: 12px 0 0 12px;
+    padding: 15px 0 6px 27px;
+    border-bottom: 1px solid #E5E8EB;
   }
 
 .pairumani1 {

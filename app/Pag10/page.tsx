@@ -1,11 +1,11 @@
 "use client"; 
 import React, { useState } from 'react';
-import Confirmplus from '@/Notaespecial/Confirmplus';
-import Head from '@/Notaespecial/Head';
-import Comidas from '@/Notaespecial/Comidas';
-import Lugar from '@/Notaespecial/Lugar';
-import Opccomedor from '@/Notaespecial/Opccomedor';
-import Contipedido from '@/Notaespecial/Contipedido';
+import Confirmplus from '@/components/Confirmplus';
+import Head from '@/components/Head';
+import Comidas from '@/components/Comidas';
+import Lugar from '@/components/Lugar';
+import Opccomedor from '@/components/Opccomedor';
+import Contipedido from '@/components/Contipedido';
 
 const Page = () => {
   const [mostrarOpcComedor, setMostrarOpcComedor] = useState(false);
