@@ -19,8 +19,7 @@ const FoodList = () => {
                     src={food.src}
                     alt={food.alt}
                     name={food.name}
-                    stars={food.stars}
-                />
+                    stars={food.stars} id={''}                />
             ))}
         </section>
     );
