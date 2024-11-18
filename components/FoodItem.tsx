@@ -1,8 +1,6 @@
 import React from 'react';
+import Image from 'next/image';
 import './FoodItem.css';
-import FoodImage from '../atoms/FoodImage';
-import FoodName from '../atoms/FoodName';
-import Rating from '../atoms/Rating';
 
 interface FoodItemProps {
     src: string;
@@ -14,10 +12,10 @@ interface FoodItemProps {
 const FoodItem: React.FC<FoodItemProps> = ({ src, alt, name, stars }) => {
     return (
         <div className="food-item">
-            <FoodImage src={src} alt={alt} />
+            <Image src={src} alt={alt} width={80} height={80} className="food-image" />
             <div className="food-info">
-                <FoodName name={name} />
-                <Rating stars={stars} />
+                <h3 className="food-name">{name}</h3>
+                <div className="rating">{'★'.repeat(stars)}</div>
             </div>
         </div>
     );
