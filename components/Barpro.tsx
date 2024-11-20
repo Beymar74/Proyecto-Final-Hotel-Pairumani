@@ -17,9 +17,7 @@ const Barpro = () => {
         height={100}
         alt={"Icono del perfil"}
       />
-        <Link href={"/Pag10"} passHref>
-            <button>Pagina10</button>
-        </Link>
+
     </div>
     </div>
     
