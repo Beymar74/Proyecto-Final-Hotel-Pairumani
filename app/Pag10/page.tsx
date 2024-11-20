@@ -1,3 +1,4 @@
+// ConfirmarPage.tsx
 "use client"; 
 import React, { useState } from 'react';
 import Confirmplus from '@/components/Confirmplus';
@@ -6,12 +7,18 @@ import Comidas from '@/components/Comidas';
 import Lugar from '@/components/Lugar';
 import Opccomedor from '@/components/Opccomedor';
 import Contipedido from '@/components/Contipedido';
+import Hora from '@/components/Hora';
+import { CalendarDemo } from '@/components/Calendari';
 
-const Page = () => {
+const ConfirmarPage = () => {
   const [mostrarOpcComedor, setMostrarOpcComedor] = useState(false);
 
   const handleComedorClick = () => {
     setMostrarOpcComedor(true);
+  };
+
+  const handleHabitacionClick = () => {
+    setMostrarOpcComedor(false);
   };
 
   return (
@@ -21,11 +28,16 @@ const Page = () => {
       <Comidas />
       <Comidas />
       <Comidas />
-      <Lugar onComedorClick={handleComedorClick} /> {/* Pasamos la función como prop */}
-      {mostrarOpcComedor && <Opccomedor />} {/* Renderizamos Opccomedor solo si mostrarOpcComedor es true */}
+      <Lugar 
+        onComedorClick={handleComedorClick} 
+        onHabitacionClick={handleHabitacionClick} 
+      />
+      {mostrarOpcComedor && <Opccomedor />}
+      <Hora />
+      <CalendarDemo />
       <Contipedido />
     </div>
   );
 };
 
-export default Page;
+export default ConfirmarPage;
