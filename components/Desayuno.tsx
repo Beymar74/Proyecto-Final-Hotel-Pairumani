@@ -1,44 +1,22 @@
-"use client";
-
 import { getPlates } from "@/lib/getPlates";
-import { useEffect, useState } from "react";
-import "./Desayuno.css";
 import Plate from "./Plate";
+import "./Desayuno.css";
 
-interface PlateType {
-  id: string;
-  name: string;
-  plaimagen: string;
-  precio: number;
-}
-
-const Desayuno = () => {
-  const [plates, setPlates] = useState<PlateType[]>([]);
-
-  useEffect(() => {
-    async function fetchPlates() {
-      try {
-        const response = await getPlates(
-          "https://673629d5aafa2ef2222fb0a8.mockapi.io/menudesayuno"
-        );
-        setPlates(response);
-      } catch (error) {
-        console.error("Error al obtener los platos:", error);
-      }
-    }
-    fetchPlates();
-  }, []);
+async function Desayuno() {
+  const plates = await getPlates(
+    "https://673629d5aafa2ef2222fb0a8.mockapi.io/menudesayuno"
+  );
 
   return (
     <section className="desayuno-container">
       <h1 className="des">Desayuno</h1>
       <div className="grid-container">
-        {plates.map((plate) => (
+        {plates.map((plate: any) => (
           <Plate key={plate.id} plate={plate} />
         ))}
       </div>
     </section>
   );
-};
+}
 
 export default Desayuno;

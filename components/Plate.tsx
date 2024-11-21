@@ -15,13 +15,13 @@ const Plate = ({ plate }: PlateProps) => {
   const { id, name, plaimagen, precio } = plate;
   return (
     <Link href={`/platillos/${id}`}>
-    <div className="plate-container">
-      <img src={plate.plaimagen} alt={plate.name} />
-      <div className="plate-details">
-        <h2>{plate.name}</h2>
-        <p>Bs. {plate.precio}</p>
+      <div className="plate-container">
+        <img src={plaimagen} alt={name} />
+        <div className="plate-details">
+          <h2>{name}</h2>
+          <p>Bs. {precio}</p>
+        </div>
       </div>
-    </div>
     </Link>
   );
 };
