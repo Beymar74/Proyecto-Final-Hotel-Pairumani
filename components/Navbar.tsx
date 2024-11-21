@@ -8,6 +8,7 @@ const Navbar = () => {
         <Link href={"/pagina11"}>Chef </Link>
         <Link href={"/orden"}>Mi Orden </Link>
         <Link href={"/historial"}>Historial </Link>
+        
     </div>
   )
 }

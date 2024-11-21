@@ -19,6 +19,11 @@ const Datos = () => {
           <button className="button">Iniciar sesión</button>
         </Link>
       </div>
+      <div className="terminos">
+        <Link href={"./Terminos"} passHref>
+          <button className="button">Terminos</button>
+        </Link>
+      </div>
       <div className="olvidarContra">
         <Link href={"/acceso"} passHref>
           <h2 className="linksini">¿Olvidaste tu contraseña?</h2>

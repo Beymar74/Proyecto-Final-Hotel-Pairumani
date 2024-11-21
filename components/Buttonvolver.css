@@ -1,0 +1,29 @@
+.volve{
+    width: 375px;
+    height: 1384px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+.volv{
+    width: 350px;
+    height: 40px;
+    padding: 9px 0px 10px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #003E09;
+}
+.volv{
+    overflow: hidden;
+    color: #FCFBFB;
+    text-align: center;
+    font-feature-settings: 'dlig' on;
+    text-overflow: ellipsis;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px; /* 150% */
+}
