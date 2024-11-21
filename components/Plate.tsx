@@ -1,5 +1,6 @@
 import React from "react";
 import "./Plate.css";
+import Link from "next/link";
 
 interface PlateProps {
   plate: {
@@ -11,7 +12,9 @@ interface PlateProps {
 }
 
 const Plate = ({ plate }: PlateProps) => {
+  const { id, name, plaimagen, precio } = plate;
   return (
+    <Link href={`/platillos/${id}`}>
     <div className="plate-container">
       <img src={plate.plaimagen} alt={plate.name} />
       <div className="plate-details">
@@ -19,6 +22,7 @@ const Plate = ({ plate }: PlateProps) => {
         <p>Bs. {plate.precio}</p>
       </div>
     </div>
+    </Link>
   );
 };
 

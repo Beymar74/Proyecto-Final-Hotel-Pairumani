@@ -20,6 +20,7 @@ const FoodList = () => {
                     alt={food.alt}
                     name={food.name}
                     stars={food.stars}
+                    id={food.id} 
                 />
             ))}
         </section>

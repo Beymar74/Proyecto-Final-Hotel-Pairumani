@@ -1,12 +1,12 @@
 import React from 'react';
 import './Footer.css';
-
+import Link from "next/link";
 const Footer = () => {
     return (
         <footer className="footer">
             <nav>
                 <a href="#">Sobre nosotros</a>
-                <a href="#">Menú</a>
+                <Link href={"/menuini"} passHref>Menú</Link>
                 <a href="#">Reservas</a>
             </nav>
             <div className="social-media">
