@@ -26,6 +26,9 @@ const Datos = () => {
         <Link href={"/historial"} passHref>
           casa
         </Link>
+        <Link href={"/Reserva"} passHref>
+          casa2
+        </Link>
       </div>
     </div>
   );
