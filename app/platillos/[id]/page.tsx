@@ -9,6 +9,7 @@ type Props = {
   params: {
     id: string;
   };
+  
 };
 
 const PlatillosPage = async ({ params: { id } }: Props) => {
@@ -39,7 +40,7 @@ const PlatillosPage = async ({ params: { id } }: Props) => {
       </div>
       <Cantimaxmin />
       <Canconfi />
-      <Resenas />
+      <Resenas resenas={data.Resenas} />
     </main>
   );
 };
