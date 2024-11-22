@@ -2,7 +2,7 @@ import React from 'react'
 import Header2 from "../../components/Header2"
 import Datos from '../../components/Datos'
 import Crear from '../../components/Crear'
-
+import Link from 'next/link'
 const AccesoPage = () => {
   return (
     <div>

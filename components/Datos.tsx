@@ -23,7 +23,12 @@ const Datos = () => {
         <Link href={"/acceso"} passHref>
           <h2 className="linksini">¿Olvidaste tu contraseña?</h2>
         </Link>
+        <Link href={"/historial"} passHref>
+          casa
+        </Link>
       </div>
+      
+
     </div>
   );
 };

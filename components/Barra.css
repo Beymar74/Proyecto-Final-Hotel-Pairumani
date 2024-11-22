@@ -1,0 +1,21 @@
+.barau{
+    display: flex;
+    width: 375;
+    height: 65px;
+    width: 375px;
+    padding: 16px 16px 8px 16px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    background: #FFF;
+}
+.historial{
+    align-self: stretch;
+    color: #1C170D;
+    font-feature-settings: 'dlig' on;
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px; /* 127.778% */
+}
