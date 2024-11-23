@@ -1,9 +1,9 @@
 .cont {
   display: flex;
-  margin: 20px 0px 0px 23px;
+  padding: 20px 0px 0px 23px;
 }
-header{
-    max-height: 370px;
+header {
+  max-height: 370px;
 }
 .pairumani {
   max-width: 20px;
@@ -22,9 +22,9 @@ header{
 }
 
 .bien {
-    margin-left: 18px;
+  margin-left: 18px;
   position: relative;
-  color: #FFF;
+  color: #fff;
   top: -90px;
   font-feature-settings: "dlig" on;
   font-family: "Plus Jakarta Sans";
@@ -33,7 +33,17 @@ header{
   font-weight: 700;
   line-height: 35px; /* 125% */
 }
- .inicio{
-    max-width:375;
-    max-height:320;
- }
+.inicio {
+  max-width: 375;
+  max-height: 320;
+}
+.ht {
+  color: #171412;
+  font-feature-settings: "dlig" on;
+  font-family: "Plus Jakarta Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23px; /* 127.778% */
+  padding-right: 87px;
+}

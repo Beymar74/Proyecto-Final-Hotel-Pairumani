@@ -1,33 +1,24 @@
-.button {
-    background-color: #f5f2f0;
-    
-    color: #000;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 0px 16px;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    width: 84px;
-    height: 40px;
-    justify-content: center;
-    align-items: center;
-    margin-left: 32px;
-    position: relative;
-    top: -8px;
-  }
-  button:hover {
-    background-color: #e2ded9;
-  }
-  .profile {
-      border-radius: 100%;
-      background-color: #f5f0f0;
-      width: 30px;
-      height: 30px;
-      margin-left: 12px;
-    }
-  .profileco{
-      display: flex;
-  }
+.barpro-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 20px;
+  padding-bottom: 9px;
+  
+}
+
+.sign-in-button {
+  font-size: 12px;
+  font-weight: bold;
+  color: #000000;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.sign-in-button:hover {
+  color: #555555;
+  text-decoration: underline;
+}
   
   
