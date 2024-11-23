@@ -4,7 +4,6 @@ import Todolist from '@/components/Todolist';
 const MenuPage = () => {
   return (
     <div>
-
         <Header3/>
         <Todolist/>   
     </div>
