@@ -22,6 +22,9 @@
     gap: 16px;
     margin: 16px 0;
 }
+.social-media:active {
+    color: #a1824a73; 
+  }
 
 .social-media a img {
     width: 24px;
