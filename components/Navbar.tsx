@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div className='barra'>
         <Link href={"/pagina11"}>Chef </Link>
-        <Link href={"/orden"}>Mi Orden </Link>
+        <Link href={"/Pag10"}>Mi Orden </Link>
         <Link href={"/historial"}>Historial </Link>
     </div>
   )

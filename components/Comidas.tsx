@@ -18,20 +18,12 @@ const Comidas = () => {
             <h3 className="name">Desayuno Americano</h3>
             <h2 className="mintexto">Bs 50</h2>
           </div>
-
-          <div className="num">1</div>
           <div className="precio">
             <span>Bs.</span><span>50</span> 
           </div>
         </div>
         <div className="notelim">
-          <textarea
-            className="comentario"
-            id="nota"
-            name="comentario"
-            placeholder="Agregue una nota(opcional)"
-          ></textarea>
-
+        <input className="comentario" type="text"  placeholder="Alergias o ingredientes a excluir" />
           <button className="eliminar">
             <Image
               className="plato"
