@@ -8,7 +8,7 @@ const Canconfi = () => {
       <button className='cancelar'>
         <span>Cancelar</span><img src="../cancel.png" alt="x" />
       </button>
-      <Link href={"/PantallaConfirmacion"} passHref>
+      <Link href={"/Pag10"} passHref>
         <button className='confirmar'>
           <span>Confirmar</span><img src="../Carrito.png" alt="R" />
         </button>

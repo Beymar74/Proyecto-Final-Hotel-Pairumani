@@ -1,14 +1,13 @@
-
 .container {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  max-width: 355px; 
-  margin: 10px 12px; /* Márgenes de 12px a los lados */
-  background-color: #fff; /* Fondo blanco */
-  border: 1px solid #e0e0e0; /* Borde gris claro */
-  border-radius: 8px; /* Bordes redondeados */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+  max-width: 355px;
+  margin: 10px 12px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .descripcion {
   display: flex;
@@ -36,69 +35,64 @@
   align-items: flex-start;
   gap: 4px;
   margin-left: 5px;
- 
-  
 }
 .name {
   color: #000;
 
-  /* Body / Normal - Medium */
   font-family: Barlow;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 130%; /* 18.2px */
+  line-height: 130%;
 }
 .mintexto {
   color: #000;
-  /* Body / Small - Medium */
+
   font-family: Barlow;
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 140%; /* 16.8px */
+  line-height: 140%;
 }
 .precio {
   color: #000;
-text-align: right;
-/* Body/Large - Medium */
-font-family: Barlow;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 140%; /* 22.4px */
+  background: white;
+  text-align: right;
+  font-family: Barlow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
   margin-left: 80px;
-  
 }
 
 .comentario {
-    width: 280px;               /* Ocupa todo el ancho disponible */       
-    height: 50px;              /* Altura específica */
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid var(--Base-Dark-Line, #393c49);
-    background: #f5f2f0;
-    resize: vertical;
-    font-size: 16px;
-    box-sizing: border-box;    /* Asegura que el padding no afecte el tamaño total */
-  }
-  .eliminar {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    padding: 8px;              /* Ajusta el padding para que no se vea desproporcionado */
-    border-radius: 8px;
-    border: 1px solid #003e09;
-    background-color: #ffffff; /* Fondo blanco o el que prefieras */
-    cursor: pointer;
-  }
+  width: 280px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--Base-Dark-Line, #393c49);
+  background: #f5f2f0;
+  resize: vertical;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.eliminar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #003e09;
+  background-color: #ffffff;
+  cursor: pointer;
+}
 .plato {
   width: 20px;
   height: 20px;
 }
 .notelim {
-    display: flex;             /* Alinea el textarea y el botón en una fila */
-    align-items: center;       /* Alinea los elementos verticalmente al centro */
-    gap: 10px;                 /* Espacio entre el textarea y el botón */
-  }
-  
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
