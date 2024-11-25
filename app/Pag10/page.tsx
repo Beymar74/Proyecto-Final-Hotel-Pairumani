@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Confirmplus from '@/components/Confirmplus';
 import Head from '@/components/Head';
-import Comidas from '@/components/Comidas';
+import Comidas1 from '@/components/Comidas1';
 import Lugar from '@/components/Lugar';
 import Opccomedor from '@/components/Opccomedor';
 import Contipedido from '@/components/Contipedido';
@@ -25,9 +25,7 @@ const ConfirmarPage = () => {
     <div>
       <Head />
       <Confirmplus />
-      <Comidas />
-      <Comidas />
-      <Comidas />
+      <Comidas1 />
       <Lugar 
         onComedorClick={handleComedorClick} 
         onHabitacionClick={handleHabitacionClick} 
