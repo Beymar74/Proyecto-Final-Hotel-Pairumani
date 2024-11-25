@@ -7,3 +7,7 @@
 .barra a{
     margin-right: 14px;    
 }
+
+.barra:active {
+    color: #003E09; 
+  }

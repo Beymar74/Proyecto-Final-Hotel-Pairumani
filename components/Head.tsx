@@ -9,10 +9,10 @@ const Head = () => {
     <section className="cabeza">
       <div className="orden">
         <div className="izq">
-          <Link href={"/acceso"} passHref>
+          <Link href={"/menuini"} passHref>
             <Image
               className="atras"
-              src="/VectorAtras.png"
+              src="/Atras.png"
               width={100}
               height={100}
               alt={"Icono Atrás"}
@@ -20,6 +20,15 @@ const Head = () => {
           </Link>
         </div>
       </div>
+      <SignedOut>
+        <SignInButton>
+          <button className="sign-in-button">Acceso</button>
+        </SignInButton>
+      </SignedOut>
+
+      <SignedIn>
+        <UserButton />
+      </SignedIn>
     </section>
   );
 };

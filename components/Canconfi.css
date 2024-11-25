@@ -1,4 +1,4 @@
-.section {
+.section1 {
   display: flex;
   width: 390px;
   max-width: 480px;
@@ -6,7 +6,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.cancelar {
+.cancelar1 {
   display: flex;
   width: 130px;
   height: 48px;
@@ -17,7 +17,7 @@
   border-radius: 15px;
   background: #faf9ff;
 }
-.confirmar {
+.confirmar1 {
   display: flex;
   color: white;
   height: 48px;
