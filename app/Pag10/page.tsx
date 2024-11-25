@@ -9,17 +9,22 @@ import Opccomedor from '@/components/Opccomedor';
 import Contipedido from '@/components/Contipedido';
 import Hora from '@/components/Hora';
 import { CalendarDemo } from '@/components/Calendari';
+import Opchabitacion from '@/components/Opchabitacion';
 
 const ConfirmarPage = () => {
   const [mostrarOpcComedor, setMostrarOpcComedor] = useState(false);
+  const [mostrarOpcHabitacion, setMostrarOpcHabitacion] = useState(false);
 
   const handleComedorClick = () => {
     setMostrarOpcComedor(true);
+    setMostrarOpcHabitacion(false);
   };
-
+  
   const handleHabitacionClick = () => {
     setMostrarOpcComedor(false);
+    setMostrarOpcHabitacion(true);
   };
+
 
   return (
     <div>
@@ -33,6 +38,8 @@ const ConfirmarPage = () => {
         onHabitacionClick={handleHabitacionClick} 
       />
       {mostrarOpcComedor && <Opccomedor />}
+      {mostrarOpcHabitacion && <Opchabitacion />}
+      
       <Hora />
       <CalendarDemo />
       <Contipedido />
