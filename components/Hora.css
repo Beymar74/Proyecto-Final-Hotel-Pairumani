@@ -2,13 +2,27 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  flex-direction: column;
-
+  flex-direction:row;
+  gap:60px ;
   border-radius: 5px;
   border: 1px solid rgba(0, 62, 9, 0.4);
   width: 375px;
+  height: auto;
+  padding:5px ;
 }
-
+.horatext{
+  font-size: 18px;
+  color: #171412;
+  font-weight: 500;
+  font-feature-settings: "dlig" on;
+  font-family: Barlow;
+  color: darkgreen;
+}
+.cloki{
+  border: 2px solid rgba(0, 62, 9, 0.4);
+  border-radius: 5px;
+  width: auto;
+}
 .buttonhora {
   display: flex;
   width: 70px;

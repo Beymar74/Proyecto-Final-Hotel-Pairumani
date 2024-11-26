@@ -3,7 +3,6 @@ import "./Opccomedor.css";
 import Image from "next/image";
 
 const Opccomedor = () => {
-  // Estado que maneja el número de personas
   const [personas, setPersonas] = useState<number>(1);
 
   // Función para aumentar el número de personas
@@ -12,7 +11,7 @@ const Opccomedor = () => {
       setPersonas(personas + 1);
     }
   };
-
+  
   // Función para disminuir el número de personas
   const disminuir = () => {
     if (personas > 1) {

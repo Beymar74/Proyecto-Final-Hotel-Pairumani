@@ -7,6 +7,7 @@
   gap: 26px;
   flex-shrink: 0;
   align-self: stretch;
+  height: auto;
 }
 .titulo {
   color: #1c170d;
@@ -33,7 +34,15 @@
   font-style: normal;
   font-weight: 700;
   line-height: 20px; /* 125% */
+  background-color: white; /* Color de fondo inicial */
+  transition: background-color 0.2s ease; /* Suavizar el cambio de color */
 }
+
+.habitacion:focus {
+  background-color: #003e09; /* Cambia el color de fondo al presionar */
+  color: white; /* Cambia el color del texto al presionar */
+}
+
 .comedor {
   display: flex;
   width: 117px;
@@ -50,4 +59,12 @@
   font-style: normal;
   font-weight: 700;
   line-height: 20px; /* 125% */
+  background-color: white; /* Color de fondo inicial */
+  transition: background-color 0.2s ease; /* Suavizar el cambio de color */
 }
+
+.comedor:focus {
+  background-color: #003e09; /* Cambia el color de fondo al presionar */
+  color: white; /* Cambia el color del texto al presionar */
+}
+
