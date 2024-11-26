@@ -14,7 +14,7 @@ interface FoodItemProps {
 const FoodItem: React.FC<FoodItemProps> = ({ src, alt, name, stars,id }) => {
     return (
         <>
-        <Link href={`/platillos/${id}`}>
+        <Link href={`/platillos1/${id}`}>
         <div className="food-item">
             <Image src={src} alt={alt} width={80} height={80} className="food-image" />
             <div className="food-info">
