@@ -11,9 +11,10 @@ interface ComidasProps {
     cantidad: number;
     total: number;
   };
+  onEliminar: (id: string) => void; 
 }
 
-const Comidas = ({ comidas }: ComidasProps) => {
+const Comidas = ({ comidas, onEliminar }: ComidasProps) => {
   const { id, titulo, plaimagen, precio, cantidad, total } = comidas;
 
   return (
@@ -25,7 +26,7 @@ const Comidas = ({ comidas }: ComidasProps) => {
             <h3 className="name">{titulo}</h3>
             <h2 className="mintexto">Cantidad: {cantidad}</h2>
           </div>
-          <div className="precio">
+          <div className="precio1">
             <span>Total Bs.</span>
             <span>{total}</span>
           </div>
@@ -36,12 +37,12 @@ const Comidas = ({ comidas }: ComidasProps) => {
             type="text"
             placeholder="Alergias o ingredientes a excluir"
           />
-          <button className="eliminar">
+          <button className="eliminar" onClick={() => onEliminar(id)}>
             <Image
               className="plato"
               src="/Delete.png"
-              width={10}
-              height={10}
+              width={20}
+              height={20}
               alt="Icono de Eliminar"
             />
           </button>

@@ -21,6 +21,7 @@
   align-items: center;
   width: 331px;
   height: 48px;
+  justify-content: space-between;
 }
 .comidas {
   width: 63.324px;
@@ -54,16 +55,17 @@
   font-weight: 500;
   line-height: 140%;
 }
-.precio {
+.precio1 {
   color: #000;
-  background: white;
+  background: white !important; 
   text-align: right;
   font-family: Barlow;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 140%;
-  margin-left: 80px;
+  margin-left: 120px;
+
 }
 
 .comentario {
