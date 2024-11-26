@@ -7,11 +7,11 @@ const Contipedido = () => {
     <div className="container">
       <div className="detalles">
         <div className="seccion">
-          <h3>Descuento</h3>
+          
           <h3>Total</h3>
         </div>
         <div className="seccion">
-          <h3>Bs. 0</h3>
+          
           <h3>Bs. 150</h3>
         </div>
       </div>
