@@ -1,20 +1,14 @@
 import React from "react";
-import "./Hora.css"
+import ClockComponent from "@/components/Clock"; // Renombrar esta importación
+
+import "./Hora.css";
 
 const Hora = () => {
   return (
     <div className="horablock">
-      <div className="grupi">
-        <button className="buttonhora">17:00</button>
-        <button className="buttonhora">17:30</button>
-        <button className="buttonhora">18:00</button>
-        <button className='buttonhora'>18:30</button>
-      </div>
-      <div className="grupii">
-        <button className="buttonhora">19:00</button>
-        <button className="buttonhora">19:30</button>
-        <button className="buttonhora">20:00</button>
-        <button className="buttonhora">20:30</button>
+      <h1 className="horatext">Elija la hora</h1>
+      <div className="cloki">
+        <ClockComponent />
       </div>
     </div>
   );

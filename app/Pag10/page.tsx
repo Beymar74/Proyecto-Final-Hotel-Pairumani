@@ -7,9 +7,10 @@ import Comidas from '@/components/Comidas';
 import Lugar from '@/components/Lugar';
 import Opccomedor from '@/components/Opccomedor';
 import Contipedido from '@/components/Contipedido';
-import Hora from '@/components/Hora';
 import { CalendarDemo } from '@/components/Calendari';
 import Opchabitacion from '@/components/Opchabitacion';
+import Hora from '@/components/Hora'; // Renombrar esta importación
+
 
 const ConfirmarPage = () => {
   const [mostrarOpcComedor, setMostrarOpcComedor] = useState(false);
@@ -39,7 +40,6 @@ const ConfirmarPage = () => {
       />
       {mostrarOpcComedor && <Opccomedor />}
       {mostrarOpcHabitacion && <Opchabitacion />}
-      
       <Hora />
       <CalendarDemo />
       <Contipedido />
