@@ -15,7 +15,7 @@ const Contipedido = () => {
           <h3>Bs. 150</h3>
         </div>
       </div>
-      <Link href={"/acceso"} passHref>
+      <Link href={"/PantallaConfirmacion"} passHref>
         <div className="boton">
           <button className="continuar">Continuar el pedido</button>
         </div>
