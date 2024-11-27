@@ -8,9 +8,9 @@ const Confirm = () => {
     <div className="conteiner">
       <div className="text">
         <p className="confirm">Confirmacion</p>
-        <p className="order">Order #19216811</p>
+        <p className="order">Order #112</p>
       </div>
-      <Link href={"/acceso"} passHref>
+      <Link href={"/menuini"} passHref>
         <button className="buttonmas">
           <Image
             className="plus"

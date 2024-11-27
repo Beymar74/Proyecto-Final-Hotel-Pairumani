@@ -13,9 +13,14 @@
 }
 .seccion {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
-  gap: 16px;
+  gap: 8px; /* Ajuste del espacio */
+  font-family: Barlow;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 140%;
 }
 .boton {
   display: flex;
