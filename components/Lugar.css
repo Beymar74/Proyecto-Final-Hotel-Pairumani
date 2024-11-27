@@ -1,14 +1,15 @@
 .conteiner {
   display: flex;
-  height: 59px;
+  height: auto;
+  max-width: 365px;
+  margin: 0 auto;
   padding: 10px 8px 0px 8px;
   justify-content: center;
   align-items: center;
   gap: 26px;
   flex-shrink: 0;
-  align-self: stretch;
-  height: auto;
 }
+
 .titulo {
   color: #1c170d;
   font-feature-settings: "dlig" on;
@@ -18,6 +19,7 @@
   font-weight: 500;
   line-height: 24px; /* 150% */
 }
+
 .habitacion {
   display: flex;
   width: 117px;
@@ -34,13 +36,13 @@
   font-style: normal;
   font-weight: 700;
   line-height: 20px; /* 125% */
-  background-color: white; /* Color de fondo inicial */
-  transition: background-color 0.2s ease; /* Suavizar el cambio de color */
+  background-color: white;
+  transition: background-color 0.2s ease; 
 }
 
 .habitacion:focus {
-  background-color: #003e09; /* Cambia el color de fondo al presionar */
-  color: white; /* Cambia el color del texto al presionar */
+  background-color: #003e09; 
+  color: white; 
 }
 
 .comedor {
@@ -59,12 +61,11 @@
   font-style: normal;
   font-weight: 700;
   line-height: 20px; /* 125% */
-  background-color: white; /* Color de fondo inicial */
-  transition: background-color 0.2s ease; /* Suavizar el cambio de color */
+  background-color: white; 
+  transition: background-color 0.2s ease; 
 }
 
 .comedor:focus {
-  background-color: #003e09; /* Cambia el color de fondo al presionar */
-  color: white; /* Cambia el color del texto al presionar */
+  background-color: #003e09; 
+  color: white; 
 }
-

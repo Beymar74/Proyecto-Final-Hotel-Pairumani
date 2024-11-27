@@ -11,8 +11,8 @@ const Lugar: React.FC<LugarProps> = ({ onComedorClick, onHabitacionClick }) => {
   return (
     <div className='conteiner'>  
       <h3 className='titulo'>Lugar</h3>
-      <button className='habitacion' onClick={onHabitacionClick}>Habitación</button> {/* Añadimos onClick aquí */}
-      <button className='comedor' onClick={onComedorClick}>Comedor</button> {/* Añadimos onClick aquí */}
+      <button className='habitacion' onClick={onHabitacionClick}>Habitación</button>
+      <button className='comedor' onClick={onComedorClick}>Comedor</button>
     </div>
   );
 };

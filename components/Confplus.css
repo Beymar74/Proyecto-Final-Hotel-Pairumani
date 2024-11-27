@@ -8,7 +8,6 @@
 }
 .confirm {
   color: #000;
-/* Heading/H1 */
 font-family: Barlow;
 font-size: 28px;
 font-style: normal;
@@ -17,7 +16,7 @@ line-height: 140%; /* 39.2px */
 }
 .order {
   color: #000;
-  /* Body/Large - Medium */
+  
   font-family: Barlow;
   font-size: 16px;
   font-style: normal;
@@ -35,7 +34,7 @@ line-height: 140%; /* 39.2px */
   border-radius: 10px;
   cursor: pointer;
   margin-left: 100px;
-  margin-right: 12px;
+  margin-right: 22px;
 }
 button:hover {
   background: #000000;

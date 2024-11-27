@@ -13,9 +13,9 @@
 .numhabi {
   font-size: 16px;
   font-weight: 700;
-  line-height: 24px; /* 150% */
-  background-color: #fff; /* Fondo blanco */
-  border: 1px solid #e0e0e0; /* Borde gris claro */
-  border-radius: 8px; /* Bordes redondeados */
+  line-height: 24px; 
+  background-color: #fff; 
+  border: 1px solid #e0e0e0; 
+  border-radius: 8px; 
   padding: 2px;
 }

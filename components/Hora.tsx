@@ -1,15 +1,19 @@
 import React from "react";
-import ClockComponent from "@/components/Clock"; // Renombrar esta importación
-
 import "./Hora.css";
 
-const Hora = () => {
+type Props = {
+  setHora: (hora: string) => void;
+};
+
+const Hora: React.FC<Props> = ({ setHora }) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHora(e.target.value);
+  };
+
   return (
     <div className="horablock">
-      <h1 className="horatext">Elija la hora</h1>
-      <div className="cloki">
-        <ClockComponent />
-      </div>
+      <label htmlFor="horatext">Selecciona la Hora:</label>
+      <input id="hora" type="time" onChange={handleChange} />
     </div>
   );
 };

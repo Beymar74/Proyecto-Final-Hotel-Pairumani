@@ -5,8 +5,8 @@
 
 .contact-image {
     position: relative;
-    display: inline-block; /* Esto ayuda a que se centre */
-    margin: 0 auto; /* Centra el elemento en su contenedor */
+    display: inline-block; 
+    margin: 0 auto; 
     border-radius: 8px;
     overflow: hidden;
 }
@@ -32,5 +32,5 @@
     font-style: normal;
     font-weight: 700;
     line-height: 28px;
-    margin-bottom: 16px; /* Espacio debajo del título */
+    margin-bottom: 16px; 
 }

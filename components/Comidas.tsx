@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import "./Comida.css";
 
@@ -10,12 +10,25 @@ interface ComidasProps {
     precio: number;
     cantidad: number;
     total: number;
+    extra?: string;
   };
+  onExtraSubmit: (id: string, value: string) => void; 
   onEliminar: (id: string) => void; 
 }
 
-const Comidas = ({ comidas, onEliminar }: ComidasProps) => {
-  const { id, titulo, plaimagen, precio, cantidad, total } = comidas;
+const Comidas = ({ comidas, onExtraSubmit, onEliminar }: ComidasProps) => {
+  const { id, titulo, plaimagen, total, cantidad } = comidas;
+  const [localExtra, setLocalExtra] = useState(comidas.extra || ""); 
+
+  const handleSubmit = () => {
+    console.log(`Guardando extra para el plato con ID ${id}:`, localExtra);
+
+  
+  onExtraSubmit(id, localExtra);
+
+  
+  alert("Extra guardado correctamente.");
+  };
 
   return (
     <section className="container">
@@ -36,7 +49,12 @@ const Comidas = ({ comidas, onEliminar }: ComidasProps) => {
             className="comentario"
             type="text"
             placeholder="Alergias o ingredientes a excluir"
+            value={localExtra} 
+            onChange={(e) => setLocalExtra(e.target.value)} 
           />
+          <button className="submit" onClick={handleSubmit}>
+            Guardar
+          </button>
           <button className="eliminar" onClick={() => onEliminar(id)}>
             <Image
               className="plato"
