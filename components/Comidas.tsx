@@ -12,21 +12,21 @@ interface ComidasProps {
     total: number;
     extra?: string;
   };
-  onExtraSubmit: (id: string, value: string) => void; // Función para guardar el extra
-  onEliminar: (id: string) => void; // Función para eliminar un elemento
+  onExtraSubmit: (id: string, value: string) => void; 
+  onEliminar: (id: string) => void; 
 }
 
 const Comidas = ({ comidas, onExtraSubmit, onEliminar }: ComidasProps) => {
   const { id, titulo, plaimagen, total, cantidad } = comidas;
-  const [localExtra, setLocalExtra] = useState(comidas.extra || ""); // Estado local para manejar el input
+  const [localExtra, setLocalExtra] = useState(comidas.extra || ""); 
 
   const handleSubmit = () => {
     console.log(`Guardando extra para el plato con ID ${id}:`, localExtra);
 
-  // Llama a la función de actualización
+  
   onExtraSubmit(id, localExtra);
 
-  // Mensaje de confirmación
+  
   alert("Extra guardado correctamente.");
   };
 
@@ -49,8 +49,8 @@ const Comidas = ({ comidas, onExtraSubmit, onEliminar }: ComidasProps) => {
             className="comentario"
             type="text"
             placeholder="Alergias o ingredientes a excluir"
-            value={localExtra} // Controlado por el estado local
-            onChange={(e) => setLocalExtra(e.target.value)} // Actualiza el estado local
+            value={localExtra} 
+            onChange={(e) => setLocalExtra(e.target.value)} 
           />
           <button className="submit" onClick={handleSubmit}>
             Guardar

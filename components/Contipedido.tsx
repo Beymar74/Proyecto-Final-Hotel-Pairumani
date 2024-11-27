@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 type ContipedidoProps = {
   total: number;
-  onConfirmar: () => void; // Función para confirmar el pedido
+  onConfirmar: () => void; 
 };
 
 const Contipedido: React.FC<ContipedidoProps> = ({ total, onConfirmar }) => {

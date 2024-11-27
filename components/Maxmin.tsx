@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { useUser } from "@clerk/nextjs"; // Importar para acceder al usuario autenticado
+import { useUser } from "@clerk/nextjs"; 
 import "./Maxmin.css";
 
 type CantimaxminProps = {
@@ -17,9 +17,9 @@ type CantimaxminProps = {
 
 const Cantimaxmin: React.FC<CantimaxminProps> = ({ initialCantidad, data }) => {
   const [cantidad, setCantidad] = useState<number>(initialCantidad);
-  const { user } = useUser(); // Hook para obtener datos del usuario autenticado
+  const { user } = useUser(); 
 
-  // Obtener el username y email del usuario autenticado
+  
   const usern = user?.username || user?.fullName || `${user?.firstName} ${user?.lastName}` || "Usuario desconocido";
   const email = user?.emailAddresses[0]?.emailAddress || "Correo no disponible";
 

@@ -6,19 +6,19 @@ import "./FechaConHora.css"
 const FechaConhora = () => {
   const [fechaHora, setFechaHora] = useState(new Date());
 
-  // Función para formatear el día de la semana
+  
   const obtenerDiaSemana = (fecha: Date) => {
     const dias = ["Dom", "Lun", "Mar", "Mié", "Jue", "Vie", "Sáb"];
     return dias[fecha.getDay()];
   };
 
-  // Actualizar la fecha y hora cada segundo
+  
   useEffect(() => {
     const interval = setInterval(() => {
       setFechaHora(new Date());
     }, 1000);
 
-    return () => clearInterval(interval); // Limpiar el intervalo al desmontar
+    return () => clearInterval(interval); 
   }, []);
 
   return (

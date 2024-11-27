@@ -3,7 +3,7 @@ import "./Opccomedor.css";
 import Image from "next/image";
 
 type Props = {
-  setPersonas: (value: number | null) => void; // Función para actualizar el estado global
+  setPersonas: (value: number | null) => void; 
 };
 
 const Opccomedor: React.FC<Props> = ({ setPersonas }) => {
@@ -13,7 +13,7 @@ const Opccomedor: React.FC<Props> = ({ setPersonas }) => {
     if (personas < 10) {
       const nuevaCantidad = personas + 1;
       setLocalPersonas(nuevaCantidad);
-      setPersonas(nuevaCantidad); // Actualiza el estado global
+      setPersonas(nuevaCantidad); 
     }
   };
 
@@ -21,7 +21,7 @@ const Opccomedor: React.FC<Props> = ({ setPersonas }) => {
     if (personas > 1) {
       const nuevaCantidad = personas - 1;
       setLocalPersonas(nuevaCantidad);
-      setPersonas(nuevaCantidad); // Actualiza el estado global
+      setPersonas(nuevaCantidad); 
     }
   };
 

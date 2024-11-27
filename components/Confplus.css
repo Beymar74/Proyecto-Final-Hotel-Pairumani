@@ -8,7 +8,6 @@
 }
 .confirm {
   color: #000;
-/* Heading/H1 */
 font-family: Barlow;
 font-size: 28px;
 font-style: normal;
@@ -17,7 +16,7 @@ line-height: 140%; /* 39.2px */
 }
 .order {
   color: #000;
-  /* Body/Large - Medium */
+  
   font-family: Barlow;
   font-size: 16px;
   font-style: normal;
