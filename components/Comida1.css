@@ -1,35 +1,22 @@
-.cuadro{
-    width: 375px;
-    display: flex;
-    padding: 12px 16px;
-    align-items: flex-start;
-    gap: 16px;
-    align-self: stretch;
-    background: #FFF;
+.cuadro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.ima{
-    width: 48px;
-    height: 56px;
-    
-}   
-.comid{
-    align-self: stretch;
-    color: #1C170D;
-    font-feature-settings: 'dlig' on;
-    font-family: "Plus Jakarta Sans";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px; /* 150% */
+.comid {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
 }
-.tema{
-    align-self: stretch;
-    color: #9C704A;
-    font-feature-settings: 'dlig' on;
-    font-family: Epilogue;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 21px; /* 150% */
+
+.tema {
+  font-size: 14px;
+  margin: 0;
 }

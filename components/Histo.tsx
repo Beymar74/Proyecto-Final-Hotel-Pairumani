@@ -4,7 +4,7 @@ const Histo = () => {
   return (
     <div>
         <div className='cajon'>
-        <h1 className='his'>Historial de Comidas Reservadas</h1>
+        <h1 className='hist'>Historial de Comidas Reservadas</h1>
         </div>
     </div>
   )

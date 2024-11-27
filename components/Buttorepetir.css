@@ -1,25 +1,15 @@
-
-.bot{
-    display: flex;
-    height: 40px;
-    min-width: 84px;
-    max-width: 480px;
-    padding: 0px 16px;
-    justify-content: center;
-    align-items: center;
-}
-.texto{
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    align-self: stretch;
-    overflow: hidden;
-    color: #171412;
+.boton-repetir {
+    background: #f6f6f6;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    color: #1c170d;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 16px;
+    cursor: pointer;
     text-align: center;
-    font-feature-settings: 'dlig' on;
-    text-overflow: ellipsis;
-    font-family: "Plus Jakarta Sans";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px; /* 150% */
-}
+  }
+  
+  .boton-repetir:hover {
+    background: #ededed;
+  }

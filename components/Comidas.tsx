@@ -21,7 +21,7 @@ const Comidas = ({ comidas, onExtraSubmit, onEliminar }: ComidasProps) => {
   const [localExtra, setLocalExtra] = useState(comidas.extra || ""); 
 
   const handleSubmit = () => {
-    console.log(`Guardando extra para el plato con ID ${id}:`, localExtra);
+
 
   
   onExtraSubmit(id, localExtra);
@@ -52,9 +52,7 @@ const Comidas = ({ comidas, onExtraSubmit, onEliminar }: ComidasProps) => {
             value={localExtra} 
             onChange={(e) => setLocalExtra(e.target.value)} 
           />
-          <button className="submit" onClick={handleSubmit}>
-            Guardar
-          </button>
+         
           <button className="eliminar" onClick={() => onEliminar(id)}>
             <Image
               className="plato"

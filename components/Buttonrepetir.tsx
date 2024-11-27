@@ -1,17 +1,16 @@
-import React from 'react'
-import Link from 'next/link'
-import "./Buttonregreso.css"
-const Buttonrepetir = () => {
-  return (
-    
-    <div>
-      <div className="bot">
-        <Link className="texto" href={"#"} passHref>
-          Repetir pedido  
-        </Link>
-      </div> 
-    </div>
-  )
+import React from "react";
+import "./Buttorepetir.css"; // Importa un archivo CSS normal
+
+interface ButtonrepetirProps {
+  onClick: () => void;
 }
 
-export default Buttonrepetir
+const Buttonrepetir: React.FC<ButtonrepetirProps> = ({ onClick }) => {
+  return (
+    <button className="boton-repetir" onClick={onClick}>
+      Repetir pedido
+    </button>
+  );
+};
+
+export default Buttonrepetir;

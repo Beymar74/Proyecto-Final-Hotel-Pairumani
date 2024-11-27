@@ -5,7 +5,8 @@ const Volver = () => {
   return (
     <div className='al'>
         <div className='botones'>
-            <Link className="texto" href={"#"} passHref>Volver Menu</Link>
+            <Link className='texto' href={"/menuini"} passHref>Volver Menu
+        </Link>
         </div>
     </div>
   )

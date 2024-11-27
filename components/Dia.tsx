@@ -18,9 +18,7 @@ const Dia: React.FC = () => {
     return () => clearInterval(intervalId);
   }, []);
 
-  return <div className=".fechas-container-simple"><div className="fecha-item">Hoy</div></div>;
+  return <div className=".fechas-container-simple"><div className="fecha-item">Lista</div></div>;
 };
 
 export default Dia;
-
-
