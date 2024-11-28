@@ -1,10 +1,7 @@
 .barpro-container {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  padding-left: 20px;
-  padding-bottom: 9px;
-  
+  gap: 16px;
 }
 
 .login-button {
@@ -23,6 +20,5 @@
 }
 
 .login-button:active {
-  color: #003E09; 
+  color: #003e09;
 }
-  

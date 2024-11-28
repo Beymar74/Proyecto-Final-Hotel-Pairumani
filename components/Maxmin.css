@@ -54,11 +54,12 @@
 
 .section {
   display: flex;
-  width: 390px;
+  width: 375px;
   max-width: 480px;
   padding: 12px 30px;
   justify-content: space-between;
   align-items: center;
+  justify-content: center;
 }
 .cancelar {
   display: flex;
