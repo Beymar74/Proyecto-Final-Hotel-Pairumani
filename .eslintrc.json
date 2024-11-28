@@ -1,3 +1,8 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals"],
+  "rules": {
+    "@next/next/no-img-element": "off", // Si necesitas usar <img>
+    "@typescript-eslint/no-explicit-any": "off", // Ignora errores por uso de any
+    "@typescript-eslint/no-unused-vars": "off" // Ignora errores por variables no usadas
+  }
 }

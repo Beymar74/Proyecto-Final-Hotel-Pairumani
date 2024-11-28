@@ -5,7 +5,6 @@ import "./Desayuno.css";
 async function Desayuno() {
   const plates = await getPlates(
     "https://673629d5aafa2ef2222fb0a8.mockapi.io/menualmuerzo"
-    
   );
 
   return (
