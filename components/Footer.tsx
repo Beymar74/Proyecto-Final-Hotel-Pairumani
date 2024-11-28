@@ -7,7 +7,6 @@ const Footer = () => {
             <nav>
                 <a href="#">Sobre nosotros</a>
                 <Link href={"/menuini"} passHref>Menú</Link>
-                <a href="#">Reservas</a>
             </nav>
             <div className="social-media">
                 <a href="#"><img src="/icons/facebook.png" alt="Facebook" /></a>
@@ -15,7 +14,7 @@ const Footer = () => {
                 <a href="#"><img src="/icons/instagram.png" alt="Instagram" /></a>
             </div>
             <div className="footer-links">
-                <a href="#">Política de privacidad</a> | <a href="#">Contáctenos</a>
+            <Link href={"/terminos"} passHref>Política de privacidad</Link> | <a href="#">Contáctenos</a>
             </div>
         </footer>
     );
