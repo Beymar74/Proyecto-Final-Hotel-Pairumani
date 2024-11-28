@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { useUser } from "@clerk/nextjs"; 
+import { useUser } from "@clerk/nextjs";
 import "./Maxmin.css";
 
 type CantimaxminProps = {
@@ -17,10 +17,13 @@ type CantimaxminProps = {
 
 const Cantimaxmin: React.FC<CantimaxminProps> = ({ initialCantidad, data }) => {
   const [cantidad, setCantidad] = useState<number>(initialCantidad);
-  const { user } = useUser(); 
+  const { user } = useUser();
 
-  
-  const usern = user?.username || user?.fullName || `${user?.firstName} ${user?.lastName}` || "Usuario desconocido";
+  const usern =
+    user?.username ||
+    user?.fullName ||
+    `${user?.firstName} ${user?.lastName}` ||
+    "Usuario desconocido";
   const email = user?.emailAddresses[0]?.emailAddress || "Correo no disponible";
 
   const aumentar = () => {
@@ -36,6 +39,11 @@ const Cantimaxmin: React.FC<CantimaxminProps> = ({ initialCantidad, data }) => {
   };
 
   const handleConfirm = async () => {
+    if (!user) {
+      alert("Debes iniciar sesión para realizar un pedido.");
+      return;
+    }
+
     try {
       const payload = {
         platilloId: data.id,
@@ -44,19 +52,20 @@ const Cantimaxmin: React.FC<CantimaxminProps> = ({ initialCantidad, data }) => {
         cantidad: cantidad,
         total: data.precio * cantidad,
         plaimagen: data.plaimagen,
-        username: usern, 
-        correo: email, 
+        username: usern,
+        correo: email,
       };
 
-      console.log("Cuerpo enviado:", payload); 
-
-      const response = await fetch("https://673629d5aafa2ef2222fb0a8.mockapi.io/pedido", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(payload),
-      });
+      const response = await fetch(
+        "https://673629d5aafa2ef2222fb0a8.mockapi.io/pedido",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(payload),
+        }
+      );
 
       if (response.ok) {
         alert("Pedido confirmado con éxito.");
@@ -98,10 +107,9 @@ const Cantimaxmin: React.FC<CantimaxminProps> = ({ initialCantidad, data }) => {
         </div>
       </div>
       <section className="section">
-        
         <button className="confirmar" onClick={handleConfirm}>
           <span>Confirmar</span>
-          <img src="../Carrito.png" alt="R" />
+          <img src="/Carrito.png" alt="Icono Carrito" />
         </button>
       </section>
     </section>

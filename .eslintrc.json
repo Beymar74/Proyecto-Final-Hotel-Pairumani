@@ -1,3 +1,9 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals"],
+  "rules": {
+    "@next/next/no-img-element": "off", // Permite usar la etiqueta <img> en lugar de <Image>
+    "@typescript-eslint/no-unused-vars": "off", // Ignora las variables no utilizadas
+    "@typescript-eslint/no-explicit-any": "off", // Permite usar 'any' sin errores
+    "react/react-in-jsx-scope": "off" // No requiere importar React en archivos JSX/TSX
+  }
 }

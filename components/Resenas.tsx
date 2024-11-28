@@ -13,7 +13,7 @@ type ResenasProps = {
   resenas: Resena[];
 };
 
-const Resenas = ({ resenas }: ResenasProps) => {
+const Resenas: React.FC<ResenasProps> = ({ resenas }) => {
   return (
     <section className="blockresenas">
       <h1 className="title">Reseñas</h1>
@@ -21,13 +21,17 @@ const Resenas = ({ resenas }: ResenasProps) => {
         resenas.map((resena, index) => (
           <div key={index} className="coment">
             <div className="perfil">
-              <img className="plate" src={resena.perfimg} alt="" />
+              <img className="plate" src={resena.perfimg} alt="Foto de perfil" />
             </div>
             <div className="comentario">
               <div className="estrellitas">
-                {Array.from({ length: parseInt(resena.calificacion) }).map(
+                {Array.from({ length: Math.min(parseInt(resena.calificacion), 5) }).map(
                   (_, starIndex) => (
-                    <img key={starIndex} src="../star.png" alt="*" />
+                    <img
+                      key={starIndex}
+                      src="/star.png"
+                      alt={`Estrella ${starIndex + 1}`}
+                    />
                   )
                 )}
               </div>
@@ -38,7 +42,7 @@ const Resenas = ({ resenas }: ResenasProps) => {
           </div>
         ))
       ) : (
-        <p>No hay reseñas disponibles.</p>
+        <p className="sinResenas">No hay reseñas disponibles.</p>
       )}
     </section>
   );
