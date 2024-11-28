@@ -26,7 +26,6 @@ const Header3 = () => {
             <button className="sign-in-button">Acceso</button>
           </SignInButton>
         </SignedOut>
-
         <SignedIn>
           <UserButton />
         </SignedIn>
