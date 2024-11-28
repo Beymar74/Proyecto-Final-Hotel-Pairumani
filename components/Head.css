@@ -2,27 +2,25 @@
   display: flex;
   padding: 16px 16px 8px 16px;
   align-items: center;
-  justify-content:space-between;
-
+  justify-content: space-between;
 }
-.orden{
+.orden {
   display: flex;
   align-items: center;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 .izq {
-  margin-right:70px;
+  margin-right: 70px;
   margin-left: 5px;
   margin-right: 240px;
-
 }
 .der {
   display: flex;
   justify-content: flex-end;
-  margin-left:90px;
+  margin-left: 90px;
   margin-right: 0px;
 }
-.atras{
+.atras {
   width: 30px;
   height: 30px;
 }
@@ -36,6 +34,3 @@
   cursor: pointer;
   font-family: "Plus Jakarta Sans";
 }
-
-
-

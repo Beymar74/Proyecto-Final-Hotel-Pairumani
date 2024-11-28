@@ -8,17 +8,17 @@
   font-style: normal;
   font-weight: 700;
   line-height: 23px; /* 127.778% */
-  padding: 5px;
+  padding: 0px 10px;
 }
+
 .coment {
   display: flex;
-  width: 390px;
+  width: 375px;
   height: auto;
   max-width: 480px;
-  padding: 12px 25px;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom:5px;
+  padding: 10px ;
 }
 .perfil {
   margin-top:-38px;

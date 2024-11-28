@@ -20,6 +20,9 @@ const Head = () => {
           </Link>
         </div>
       </div>
+
+
+      
       <SignedOut>
         <SignInButton>
           <button className="sign-in-button">Acceso</button>

@@ -4,6 +4,7 @@ import Cantimaxmin from "@/components/Maxmin";
 import Canconfi from "@/components/Canconfi";
 import Resenas from "@/components/Resenas";
 import "./Platillos.css";
+import Head1 from "@/components/Head1";
 
 type Props = {
   params: {
@@ -17,8 +18,8 @@ const PlatillosPage = async ({ params: { id } }: Props) => {
   );
 
   return (
-    <main>
-      <Headatras1 />
+    <main className="contenidotarjetaaa">
+      <Head1 />
       <div className="imagen">
         <img className="plate" src={data.plaimagen} alt={data.titulo} />
       </div>
@@ -38,7 +39,7 @@ const PlatillosPage = async ({ params: { id } }: Props) => {
         <h1 className="subtitulo">Ingredientes Principales</h1>
         <p className="lista">Ingredientes: {data.ingredientes}</p>
       </div>
-     
+
       <Cantimaxmin
         initialCantidad={1}
         data={{
@@ -48,7 +49,7 @@ const PlatillosPage = async ({ params: { id } }: Props) => {
           plaimagen: data.plaimagen,
         }}
       />
-      
+
       <Resenas resenas={data.Resenas} />
     </main>
   );

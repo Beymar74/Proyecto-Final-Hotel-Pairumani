@@ -98,10 +98,7 @@ const Cantimaxmin: React.FC<CantimaxminProps> = ({ initialCantidad, data }) => {
         </div>
       </div>
       <section className="section">
-        <button className="cancelar">
-          <span>Cancelar</span>
-          <img src="../cancel.png" alt="x" />
-        </button>
+        
         <button className="confirmar" onClick={handleConfirm}>
           <span>Confirmar</span>
           <img src="../Carrito.png" alt="R" />

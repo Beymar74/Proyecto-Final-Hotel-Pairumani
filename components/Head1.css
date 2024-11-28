@@ -1,21 +1,23 @@
 .cabeza {
   display: flex;
-  background-color: #fff; 
-  padding: 16px;
-  max-width: 375px;
+  width: 375px;
+  height: 65px;
+  padding: 21px 35px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
 }
 .atras {
-  width: 24px; 
+  width: 24px;
   height: 24px;
   cursor: pointer;
 }
 
-
 .historial {
   font-size: 18px;
   font-weight: bold;
-  color: #000; 
-  margin: 0; 
+  color: #000;
+  margin: 0;
   text-align: center;
-  flex-grow: 1; 
+  flex-grow: 1;
 }
