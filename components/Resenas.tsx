@@ -25,7 +25,6 @@ const Resenas = ({ resenas }: ResenasProps) => {
             </div>
             <div className="comentario">
               <div className="estrellitas">
-                {/*Este es la condicion para las estrellas*/}
                 {Array.from({ length: parseInt(resena.calificacion) }).map(
                   (_, starIndex) => (
                     <img key={starIndex} src="../star.png" alt="*" />

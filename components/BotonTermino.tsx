@@ -4,7 +4,7 @@ import "./BotonTermino.css";
 const BotonTermino = () => {
   return (
     <div>
-      <Link href={"/crear"} passHref>
+      <Link href={"/"} passHref>
         <button type="submit" className="submit-button">
           Volver
         </button>

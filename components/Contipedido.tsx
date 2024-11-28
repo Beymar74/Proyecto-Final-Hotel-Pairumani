@@ -16,13 +16,13 @@ const Contipedido: React.FC<ContipedidoProps> = ({ total, onConfirmar }) => {
           <h3>Bs. {total}</h3>
         </div>
       </div>
-      <div className="boton">
       <Link href={"/PantallaConfirmacion"} passHref>
+      <div className="boton">
         <button className="continuar" onClick={onConfirmar}>
           Continuar el pedido
         </button>
-        </Link>
       </div>
+      </Link>
     </div>
   );
 };
