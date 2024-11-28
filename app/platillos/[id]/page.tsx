@@ -1,27 +1,45 @@
 import { getPlates } from "@/lib/getPlates";
 import Headatras from "@/components/Headatras";
 import Cantimaxmin from "@/components/Maxmin";
-import Canconfi from "@/components/Canconfi";
 import Resenas from "@/components/Resenas";
+import Image from "next/image";
 import "./Platillos.css";
-import Head2 from "@/components/Head2"
 
-type Props = {
-  params: {
-    id: string;
-  };
+// Tipo para los datos del platillo
+type PlateData = {
+  id: string;
+  plaimagen: string;
+  titulo: string;
+  precio: number;
+  descripcion: string;
+  ingredientes: string;
+  Resenas: any[];
 };
 
-const PlatillosPage = async ({ params: { id } }: Props) => {
-  const data = await getPlates(
+// Sobreescribir el tipo de las props de la página para evitar conflictos
+type PageProps = {
+  params: { id: string }; // Redefinimos manualmente `params` para evitar problemas
+};
+
+const PlatillosPage = async ({ params }: PageProps) => {
+  const { id } = params;
+
+  // Obtenemos los datos del platillo
+  const data: PlateData = await getPlates<PlateData>(
     `https://673629d5aafa2ef2222fb0a8.mockapi.io/platos/${id}`
   );
 
   return (
-    <main className="contenidotarjetaaa">
-      <Head2/>
+    <main>
+      <Headatras />
       <div className="imagen">
-        <img className="plate" src={data.plaimagen} alt={data.titulo} />
+        <Image
+          className="plate"
+          src={data.plaimagen}
+          alt={data.titulo}
+          width={500}
+          height={500}
+        />
       </div>
       <div className="descripcion">
         <h1 className="titulo">Platillo: {data.titulo}</h1>
@@ -39,7 +57,6 @@ const PlatillosPage = async ({ params: { id } }: Props) => {
         <h1 className="subtitulo">Ingredientes Principales</h1>
         <p className="lista">Ingredientes: {data.ingredientes}</p>
       </div>
-     
       <Cantimaxmin
         initialCantidad={1}
         data={{
@@ -49,7 +66,6 @@ const PlatillosPage = async ({ params: { id } }: Props) => {
           plaimagen: data.plaimagen,
         }}
       />
-      
       <Resenas resenas={data.Resenas} />
     </main>
   );
