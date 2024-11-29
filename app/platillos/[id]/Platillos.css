@@ -1,0 +1,88 @@
+.contenidotarjetaaa {
+  display: flex;
+  width: 375px;
+  height: 1500px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.imagen {
+  width: 100%;
+  height: 155px;
+  border-radius: 10px;
+  background-color: #f5f0f0;
+  opacity: hidden;
+}
+.plate {
+  height: 150px;
+  width: 100%;
+  object-fit: contain;
+}
+.titulo {
+  align-self: stretch;
+  color: #0d141c;
+  font-feature-settings: "dlig" on;
+  font-family: "Plus Jakarta Sans";
+  font-size: 20px;
+  font-style: normal;
+  line-height: 35px; /* 125% */
+
+  padding: 10px 10px;
+}
+.money {
+  align-self: stretch;
+  color: #0d141c;
+  font-feature-settings: "dlig" on;
+  font-family: "Plus Jakarta Sans";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35px; /* 125% */
+}
+.precio {
+  align-self: stretch;
+  color: #0d141c;
+  height: 43;
+  font-feature-settings: "dlig" on;
+  font-family: "Plus Jakarta Sans";
+  font-size: 17px;
+  width: 375px;
+
+  padding: 5px 10px;
+}
+
+.blockdes {
+  border-radius: 5px;
+  border: 1px solid rgba(0, 62, 9, 0.4);
+  padding: 10px 20px;
+}
+.descripcion {
+  color: #171412;
+  font-feature-settings: "dlig" on;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+.subtitulo {
+  align-self: stretch;
+  color: #0d141c;
+  font-feature-settings: "dlig" on;
+  font-family: "Plus Jakarta Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35px; /* 125% */
+  color: darkgreen;
+  padding: 5px 10px;
+}
+.lista {
+  color: #171412;
+  font-feature-settings: "dlig" on;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 5px 10px;
+}

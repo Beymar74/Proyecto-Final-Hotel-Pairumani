@@ -1,7 +1,7 @@
 import React from 'react'
-import Header2 from "./components2/Header2"
-import Datos from './components2/Datos'
-import Crear from './components2/Crear'
+import Header2 from "../../components/Header2"
+import Datos from '../../components/Datos'
+import Crear from '../../components/Crear'
 
 const AccesoPage = () => {
   return (

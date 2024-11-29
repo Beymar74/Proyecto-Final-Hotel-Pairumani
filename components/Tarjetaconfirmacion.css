@@ -1,0 +1,57 @@
+.estructuratarjeta {
+  display: flex;
+  width: 342px;
+  height: 50px;
+  padding: 0px 20px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+.datostarjcon {
+  display: flex;
+  width: 187px;
+  padding: 0px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.comiditatarjcon {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 84.5px;
+  border: 1px solid #000;
+}
+.detallestarjcon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.nomplattarcon {
+  width: 140px;
+  color: #000;
+  font-family: "Plus Jakarta Sans";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+}
+.detalleplattarcon {
+  color: #000;
+  font-family: "Plus Jakarta Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+.precioplattarcon {
+  color: #000;
+  text-align: right;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}

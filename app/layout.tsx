@@ -1,16 +1,36 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Plus_Jakarta_Sans, Barlow } from "next/font/google";
 import "./globals.css";
+import { ClerkProvider } from "@clerk/nextjs";
+import { MantineProvider } from "@mantine/core";
 
+// Fuentes locales
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
+
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
+});
+
+// Fuentes de Google
+const plusJakartaSans = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  variable: "--font-plus-jakarta-sans",
+  weight: ["200", "400", "600", "800"],
+  display: "swap",
+});
+
+const barlow = Barlow({
+  subsets: ["latin"],
+  variable: "--font-barlow",
+  weight: ["100", "400", "700", "900"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -24,20 +44,30 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const clerkPublishableKey = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY;
+
+  if (!clerkPublishableKey) {
+    console.error("Falta NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY en las variables de entorno.");
+    return (
+      <html lang="es">
+        <body>
+          <h1>Error: Configuración de Clerk faltante</h1>
+          <p>
+            Asegúrate de configurar <code>NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY</code> en tus variables de entorno.
+          </p>
+        </body>
+      </html>
+    );
+  }
+
   return (
     <html lang="es">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
-          rel="stylesheet"
-        />
-      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${plusJakartaSans.variable} ${barlow.variable} antialiased`}
       >
-        {children}
+        <ClerkProvider publishableKey={clerkPublishableKey}>
+          <MantineProvider>{children}</MantineProvider>
+        </ClerkProvider>
       </body>
     </html>
   );

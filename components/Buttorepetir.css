@@ -1,0 +1,15 @@
+.boton-repetir {
+    background: #f6f6f6;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    color: #1c170d;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 16px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .boton-repetir:hover {
+    background: #ededed;
+  }
