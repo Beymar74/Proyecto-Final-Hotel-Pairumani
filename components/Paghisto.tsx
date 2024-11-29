@@ -4,7 +4,7 @@ import Volver from "@/components/Volver";
 import Dia from "@/components/Dia";
 import Comida1 from "@/components/Comida1";
 import Histo from "@/components/Histo";
-import Head1 from "@/components/Head1";
+import Head2 from "@/components/Head2";
 import "./Paghisto.css";
 
 interface Platillo {
@@ -36,7 +36,7 @@ interface PaghistoProps {
 const Paghisto: React.FC<PaghistoProps> = ({ ordenes, apiUrl }) => {
   return (
     <div className="pagina">
-      <Head1 />
+      <Head2 />
       <Histo />
       <Dia />
       <div className="lista">
