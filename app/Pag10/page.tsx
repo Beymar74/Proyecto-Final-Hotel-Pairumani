@@ -98,7 +98,7 @@ const ConfirmarPage = () => {
       );
 
       if (response.ok) {
-        alert("Pedido confirmado y enviado correctamente.");
+        
         const pedidosEliminar = platos.map(async (plato) => {
           await fetch(
             `https://673629d5aafa2ef2222fb0a8.mockapi.io/pedido/${plato.id}`,
