@@ -44,12 +44,28 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const clerkPublishableKey = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY;
+
+  if (!clerkPublishableKey) {
+    console.error("Falta NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY en las variables de entorno.");
+    return (
+      <html lang="es">
+        <body>
+          <h1>Error: Configuración de Clerk faltante</h1>
+          <p>
+            Asegúrate de configurar <code>NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY</code> en tus variables de entorno.
+          </p>
+        </body>
+      </html>
+    );
+  }
+
   return (
     <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${plusJakartaSans.variable} ${barlow.variable} antialiased`}
       >
-        <ClerkProvider>
+        <ClerkProvider publishableKey={clerkPublishableKey}>
           <MantineProvider>{children}</MantineProvider>
         </ClerkProvider>
       </body>
