@@ -1,5 +1,5 @@
 import React from "react";
-import "./Buttorepetir.css"; // Importa un archivo CSS normal
+import "./Buttorepetir.css"; 
 
 interface ButtonrepetirProps {
   onClick: () => void;
