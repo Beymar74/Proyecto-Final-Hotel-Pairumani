@@ -7,7 +7,7 @@ const Head1 = () => {
   return (
     <section className="cabeza">
       <div className="izq">
-        <Link href={"/menuini"} passHref>
+        <Link href={"/"} passHref>
           <Image
             className="atras"
             src="/Atras.png"
