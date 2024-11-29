@@ -3,9 +3,9 @@ import "./Resenas.css";
 
 type Resena = {
   userid: number;
-  coment: string;
-  calificacion: string;
   nombre: string;
+  comentario: string;
+  calificacion: number;
   perfimg: string;
 };
 
@@ -25,18 +25,16 @@ const Resenas: React.FC<ResenasProps> = ({ resenas }) => {
             </div>
             <div className="comentario">
               <div className="estrellitas">
-                {Array.from({ length: Math.min(parseInt(resena.calificacion), 5) }).map(
-                  (_, starIndex) => (
-                    <img
-                      key={starIndex}
-                      src="/star.png"
-                      alt={`Estrella ${starIndex + 1}`}
-                    />
-                  )
-                )}
+                {Array.from({ length: resena.calificacion }).map((_, starIndex) => (
+                  <img
+                    key={starIndex}
+                    src="/star.png"
+                    alt={`Estrella ${starIndex + 1}`}
+                  />
+                ))}
               </div>
               <p className="text">
-                <strong>{resena.nombre}:</strong> {resena.coment}
+                <strong>{resena.nombre}:</strong> {resena.comentario}
               </p>
             </div>
           </div>
