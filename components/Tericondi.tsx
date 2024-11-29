@@ -1,21 +1,21 @@
 import React from "react";
-import "./Tericondi.css"
+import "./Tericondi.css";
 
 const Tericondi = () => {
   return (
     <div className="cajini">
       <div className="titulo">
-        <h2 className="termi">Términos & condiciones</h2>
+        <h2 className="termi">Términos &amp; condiciones</h2>
       </div>
       <div className="textini">
         <p className="articulos">
           ARTÍCULO CUARTO. - (RESERVAS DE COMIDAS EN EL HOTEL PAIRUMANI) I. La
-          "Reserva de comida" en el Hotel Pairumani constituye un acuerdo
+          &quot;Reserva de comida&quot; en el Hotel Pairumani constituye un acuerdo
           preliminar para la prestación del servicio de alimentación, que se
           perfecciona cuando el Hotel acepta y confirma por escrito la solicitud
           del huésped, y este ratifica su pedido cumpliendo con las condiciones
-          establecidas. II. Toda reserva de comida es válida hasta la media
-          noche de la fecha solicitada, salvo notificación previa. En caso de no
+          establecidas. II. Toda reserva de comida es válida hasta la medianoche
+          de la fecha solicitada, salvo notificación previa. En caso de no
           confirmarse, el Hotel Pairumani se reserva el derecho de disponer del
           espacio o los recursos asignados. III. La reserva de comida debe estar
           garantizada mediante carta de la empresa, transferencia bancaria, o
