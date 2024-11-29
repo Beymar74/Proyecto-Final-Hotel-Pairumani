@@ -12,7 +12,7 @@ const foodData = [
 const FoodList = () => {
     return (
         <section className="food-list">
-            <h2>Platos Principales</h2>
+            <h2 className='platos1'>Platos Principales</h2>
             {foodData.map((food) => (
                 <FoodItem
                     key={food.id}
