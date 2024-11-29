@@ -1,10 +1,18 @@
 {
-  "extends": ["next/core-web-vitals"],
-  "rules": {
-    "@next/next/no-img-element": "off", // Permite usar la etiqueta <img> en lugar de <Image>
-    "@typescript-eslint/no-unused-vars": "off", // Ignora las variables no utilizadas
-    "@typescript-eslint/no-explicit-any": "off", // Permite usar 'any' sin errores
-    "react/react-in-jsx-scope": "off" // No requiere importar React en archivos JSX/TSX
-    
+  "compilerOptions": {
+    "strict": true,
+    "target": "es5",
+    "module": "esnext",
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "noEmit": true
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"],
+  "nextConfig": {
+    "typescript": {
+      "ignoreBuildErrors": true
+    }
   }
 }

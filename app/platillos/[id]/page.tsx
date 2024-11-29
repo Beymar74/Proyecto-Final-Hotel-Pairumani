@@ -1,24 +1,9 @@
 import { getPlates } from "@/lib/getPlates";
 import Headatras from "@/components/Headatras";
 import Cantimaxmin from "@/components/Maxmin";
-import Canconfi from "@/components/Canconfi";
 import Resenas from "@/components/Resenas";
 import "./Platillos.css";
 import Head2 from "@/components/Head2";
-
-type Plate = {
-  id: string;
-  titulo: string;
-  precio: number;
-  plaimagen: string;
-  descripcion: string;
-  ingredientes: string;
-  Resenas: Array<{
-    usuario: string;
-    comentario: string;
-    calificacion: number;
-  }>;
-};
 
 type Props = {
   params: { id: string };
@@ -28,7 +13,7 @@ const PlatillosPage = async ({ params }: Props) => {
   const { id } = params;
 
   try {
-    const data: Plate = await getPlates(
+    const data = await getPlates(
       `https://673629d5aafa2ef2222fb0a8.mockapi.io/platos/${id}`
     );
 
@@ -81,7 +66,7 @@ const PlatillosPage = async ({ params }: Props) => {
 
 export default PlatillosPage;
 
-// Generación de rutas dinámicas (Static Site Generation)
+// Función para generar rutas dinámicas (Static Site Generation)
 export async function generateStaticParams() {
   try {
     const platos = await fetch(
